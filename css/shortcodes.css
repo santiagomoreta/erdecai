@@ -1,0 +1,1318 @@
+/* ==========================================================================
+Theme Name: Valleta
+Theme URI: http://mannatstudio.com
+Description:  Valleta - Bootstrap Food & Restaurants HTML Template
+Version: 1.0
+Author: Mannat Studio
+Tags: business, color skins, corporate, css3, digital, flat, layered psd, modern, parallax, photoshop, shopping cart
+========================================================================== */
+
+/* ========= Table of Content =========== */
+	/* 
+		1. Heading Style
+		2. Breadcrumbs Style
+		3. Sliders Style
+		4. Button Style
+		5. Parallax Style
+		6. Social Icons Style
+		7. Search Box Style
+		8. Blog Sidebar Style
+		9. 404 Page Style
+		10. Blog Post Style
+		11. Bullets Style
+		12. Twitter/Flickr Style
+		13. Button Style
+		14. Tabbing Style
+		15. Accordian Style
+		16. Our Skills Style
+		17. Skills Bar Style
+		18. Stats Style
+		19. Cube Tabs Style
+		20. Shopping Cart Style
+		21. Page Loader
+		22. Login Modal Popup Style
+		23. Bootstrap Helper Style
+	*/
+	
+/* ========= 1. Heading Style =========== */
+.main-head{
+	position:relative;
+	font-size:40px;
+	font-family: 'Great Vibes', cursive;
+	color:#56beb8;
+	line-height:45px;
+	margin:0 0 30px 0;
+	font-weight:normal;
+}
+.main-head span{
+    color: inherit;
+	line-height:0px;
+    display: block;
+	max-width:50px;
+    padding: 0;
+    position: relative;
+    vertical-align: middle;
+	text-transform:uppercase;
+    z-index: 1;
+	text-align:center;
+	font-weight:300;
+	font-size:24px;
+	color:#323232;
+	margin:0 0 20px 10px;
+}
+.main-head.text-center span{
+	margin:0 auto 20px;
+}	
+.main-head span:before, .main-head span:after{
+	position:absolute;
+	content:"";
+	width:13px;
+	height:1px;
+	background:#323232;
+	z-index:100;
+	top:50%;
+}
+.main-head span:before{
+	left:-10px;
+}
+.main-head span:after{
+	right:-10px;
+}
+/* ========= End =========== */
+
+/* ========= 2. Breadcrumbs Style =========== */
+.breadcrumbs-outer{
+	padding:70px 0;
+	position:relative;
+	background:url(../images/parallax-products.jpg) no-repeat center center;
+	background-size:cover;
+	background-attachment:fixed;
+}
+.breadcrumbs{
+	text-align:center;
+	display:inline-block;
+	background:#FFF;
+	padding:40px 60px;
+	position:relative;
+	border:1px solid #dadada
+}
+.breadcrumbs:after {
+    border: 1px solid #dadada;
+    bottom: 10px;
+    content: "";
+    left: 10px;
+    pointer-events: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1;
+}
+.breadcrumbs h1{
+	text-transform:capitalize;
+	font-size:36px;
+	font-weight:400;
+}
+.breadcrumbs ul{
+	padding:8px 10px 0 10px;
+	border-top:1px solid #dadada;
+	margin:0;
+	display:inline-block;
+	list-style-type:none;
+}
+.breadcrumbs ul li{
+	display:inline-block;
+	color:#262626;
+	font-size:12px;
+	padding:0 12px 0 0;
+	position:relative;
+}
+.breadcrumbs ul li::after {
+    color: #666;
+    content: "/";
+    font-family: "FontAwesome";
+    font-size: 14px;
+    position: absolute;
+    right: 3px;
+    top: 1px;
+}
+.breadcrumbs ul li:last-child{
+	padding:0;
+}
+.breadcrumbs ul li:last-child:after{
+	content:"";
+}
+/* ========= 2. Breadcrumbs Style =========== */
+
+/* ========= 3. Sliders Style =========== */
+.owl-nav{
+	position:relative;
+	width:100%;
+	text-align:center;
+	margin-top:30px;
+}
+.owl-nav .owl-prev, .owl-nav .owl-next{
+	position:relative;
+	display:inline-block;
+	font-size:20px;
+	padding:10px 15px;
+	border:1px solid #333;
+	color:#333;	
+	font-family:"FontAwesome";
+	margin:0 4px;
+	-webkit-transition: all 0.15s linear;
+	-moz-transition: all 0.15s linear;
+	-o-transition: all 0.15s linear;
+	transition: all 0.15s linear;
+}
+.owl-nav .owl-prev:hover, .owl-nav .owl-next:hover{
+	color:#FFF;
+	background:#56beb8;
+	border:1px solid #56beb8;
+}
+.owl-controls .owl-dot {
+	display:inline-block;
+}
+.owl-controls .owl-dots {
+	text-align:center;
+	padding:0;
+}
+.owl-controls .owl-dot span{
+	display: block;
+	width: 15px;
+	height: 4px;
+	margin: 0px 2px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	background: #373737;
+	-webkit-transition: all 0.15s linear;
+	-moz-transition: all 0.15s linear;
+	-o-transition: all 0.15s linear;
+	transition: all 0.15s linear;
+}
+.owl-controls .owl-dot.active span, .owl-controls.clickable .owl-dot:hover span, .owl-carousel.dark .owl-controls .owl-dot:hover span, .owl-carousel.dark .owl-controls .owl-dot.active span, .owl-controls.clickable .owl-dot:hover span, .owl-carousel.dark .owl-controls .owl-dot:hover span {
+	background:#fbb829;
+}
+
+.owl-carousel.dark .owl-controls .owl-dot span{
+	background:#FFF;
+}
+.cbp-l-loadMore-button .cbp-l-loadMore-link.cbp-l-loadMore-stop:hover{
+	color:#FFF;
+}
+	
+/* ========= End =========== */
+
+/* ========= 4. Button Style =========== */
+.button {
+	display: inline-block;
+	padding: 6px 18px;
+	font-family: 'Roboto Slab', serif;
+	border: none;
+	background: none;
+	color: inherit;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+	font-size:14px;
+	font-weight:500;
+	border-width:1px;
+	border-color:#CCC;
+	border-style:solid;
+	background:#FFF;
+	-webkit-backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+}
+.button:hover{
+	border-color:#56beb8;
+	color:#FFF;
+}
+.button i{
+	top:2px;
+	position:relative;
+}
+.button:focus {
+	outline: none;
+}
+.button > span {
+	vertical-align: middle;
+}
+.button--isi {
+	overflow: hidden;
+}
+.button--isi::before {
+	content: '';
+	z-index: -1;
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	margin: -15px 0 0 1px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #56beb8;
+	-webkit-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
+	-webkit-transform: scale3d(1, 2, 1);
+	transform: scale3d(1, 2, 1);
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.9,1);
+	transition-timing-function: cubic-bezier(0.7,0,0.9,1);
+}
+.button--isi .button__icon {
+	vertical-align: middle;
+}
+.button--isi > span {
+	vertical-align: middle;
+	padding-right: 0.75em;
+}
+.button--isi:hover::before {
+	-webkit-transform: scale3d(9, 9, 1);
+	transform: scale3d(9, 9, 1);
+}
+/* ========= End =========== */
+
+/* ========= 5. Parallax Style =========== */
+.parallax-area {
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	position: relative;
+	padding:100px 0;
+	margin:0;
+	color:#FFF;
+}
+.parallax-image {
+	background-color:#56beb8;
+	background-size:cover;
+	background-attachment:fixed;
+}
+.team-img {
+	background-image:url(../images/parallax-bg.jpg);
+}
+.about-img {
+	background-image:url(../images/parallax-about.jpg);
+}
+.app-download {
+	background-image:url(../images/parallax-download.jpg);
+}
+
+.error-bg{
+	background-image:url(../images/parallax-404.jpg);
+}
+.event-bg{
+	background-image:url(../images/parallax-events.jpg);
+}
+.parallax-pattern{
+	background-image:url(../images/parallax-pattern.jpg);
+}
+.parallax-blog{
+	background-image:url(../images/parallax-blog.jpg);
+}
+.parallax-products{
+	background-image:url(../images/parallax-products.jpg);
+}
+.parallax-services{
+	background-image:url(../images/parallax-img1.jpg);
+}
+.parallax-clients{
+	background-image:url(../images/parallax-clients.jpg);
+}
+.parallax-image .page-overlay, .image-bg .page-overlay, .breadcrumbs-outer .page-overlay, .white-bg .page-overlay{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;	
+	background:url(../images/overlay-pattern.png) repeat rgba(0,0,0,0.5);
+}
+
+.parallax-image .main-head, .parallax-image .main-head span, .left-head .main-head, .left-head .main-head span{
+	color:#FFF !important;
+}
+
+.parallax-image .main-head span::before, .parallax-image .main-head span::after, .left-head .main-head span::before, .left-head .main-head span::after{
+	background:#FFF !important;
+}
+/* ========= End =========== */
+
+/* ========= 6. Social Icons Style =========== */
+.social-icons{
+	margin:20px 0 0 0;
+	text-align:center;
+}
+.social-icons ul{
+	margin:0;
+	padding:0;
+}
+.social-icons ul li{
+	display:inline-block;
+	padding:0 5px;
+}
+.social-icons ul li a{
+	display:block;
+	text-align:center;
+	color:#999;
+	font-size:16px;
+}
+.social-icons ul li a:hover{
+	color:#56beb8;
+}
+.footer-wrap .social-icons{
+	text-align:left;
+}
+.footer-wrap .social-icons ul li{
+	padding:0 1px;
+	margin-bottom:10px;
+}
+.footer-wrap .social-icons ul li a{
+	width:40px;
+	height:40px;
+	line-height:40px;
+	background:#999;
+	color:#FFF;
+	font-size:16px;
+	display:inline-block;
+}
+.footer-wrap .social-icons ul li a:hover{
+	background:#56beb8;
+	color:#FFF;
+}
+/* ========= End =========== */
+
+/* ========= 7. Search Box Style =========== */
+.search-box{
+	background:#FFF;
+	border:1px solid #d7d8da;
+	padding:15px;	
+	
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+}
+.search-box input{
+	background:none;
+	border:none;
+	font-style:italic;
+	font-weight:600;
+	color:#56beb8;
+	width:91%;
+	
+}
+input:focus, .form-control:focus{
+	box-shadow:none;
+	outline:none;
+}
+.search-box a{
+	font-size:14px;
+}
+/* ========= End =========== */
+
+/* ========= 8. Blog Sidebar Style =========== */
+.widget-box{
+	margin-bottom:60px;
+}
+.widget-box:last-child{
+	margin-bottom:0;
+}
+/* ========= End =========== */
+
+/* ========= 9. 404 Page Style =========== */
+.error-page {
+	padding:40px 0;
+	text-align:center;
+	font-family: 'Roboto Slab', serif;
+}
+.error-page p{
+	margin-bottom:25px;
+}
+.error-page .my-btn {
+	text-transform:capitalize
+}
+.font-large {
+	font-size:100px;
+	margin-bottom:0;
+	color:#323232;
+}
+.font-large, .font-small {
+	font-weight:700
+}
+.font-small, .font-mini {
+	color:#9098a5
+}
+/* ========= End =========== */
+
+/* ========= 10. Blog Post Style =========== */
+.recent-post ul{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+.recent-post ul li .pull-left img{
+	max-width:80px;
+	border:2px solid #FFF;
+	margin-right:5px;
+}
+.recent-post ul li{
+	border-bottom: 1px dashed #999999;
+    margin: 0 0 20px;
+    padding: 0 0 20px;
+}
+.recent-post ul li:last-child, .footer-contact li:last-child{
+	margin:0;
+	padding:0;
+	border:none;
+}
+.recent-post h4{
+	text-transform:capitalize;
+	font-weight:400;
+	margin-top:0;
+	font-size:14px;
+	color:#333;
+}
+.recent-post h4 a{
+	color:#333;
+}
+.recent-post h4 a:hover{
+	color:#56beb8;
+}
+.recent-post h5{
+	font-size:13px;
+	color:#666666;
+}
+/* ========= End =========== */
+
+/* ========= 11. Bullets Style =========== */
+.fa-ul{
+	margin:0 0 0 20px;
+}
+.fa-ul li{
+	margin:0 0 10px 0;
+}
+.fa-ul li i{
+	margin-top:2px;
+}
+.list-light li i{
+	color:#CCC;
+}
+.list-dark li i{
+	color:#333;
+}
+.list-colored li i{
+	color:#56beb8;
+}
+ul.bullets-style {
+	margin:0 0 10px 18px;
+	list-style-type:none;
+	padding:0;	
+}
+ul.bullets-style.big {
+	font-size:18px
+}
+ul.bullets-style li {
+	margin:0 0 5px
+}
+.arrow-list li:before, .arrow-list-2 li:before, .arrow-list-3 li:before, .arrow-list-4 li:before {
+	font-family:'FontAwesome';
+	margin-right:8px;
+	top:0;
+	width:10px;
+	margin-left:-18px;
+	display:inline-block
+}
+.arrow-list li:before {
+	content:"\f105"
+}
+.arrow-list-2 li:before {
+	content:"\f05d"
+}
+.arrow-list-3 li:before {
+	content:"\f138"
+}
+.arrow-list-4 li:before {
+	content:"\f061"
+}
+ul.bullets-style li, .arrow-list li:before, .arrow-list-2 li:before, .arrow-list-3 li:before, .arrow-list-4 li:before {
+	position:relative
+}
+/* ========= End =========== */
+
+/* ========= 12. Twitter/Flickr Style =========== */
+.tweet-stream .tweet_list, .tweet-stream .tweet_list li {
+	margin:0;
+	list-style:none;
+	padding:0;
+	font-size:13px;
+}
+.tweet-stream .tweet_list li{
+	border-bottom:1px dashed #666;
+	padding:0 0 20px 35px;
+	margin:0 0 20px 0;
+	position:relative;
+}
+.tweet-stream .tweet_list li:before {
+    color: #666;
+    content: "";
+    display: inline-block;
+    font-family: "FontAwesome";
+    font-size: 18px;
+    left: 0;
+    margin-right: 8px;
+    position: absolute;
+    text-align: center;
+    top: 5px;
+    width: 20px;
+}
+.tweet-stream .tweet_list li:last-child{
+	border:none;
+	margin:0;
+	padding:0 0 0 35px;
+}
+.tweet-stream .tweet_list li .tweet_text, .tweet-stream .tweet_list li .tweet_time {
+	display:block
+}
+.tweet-stream .tweet_list li .tweet_time {
+	font-size:11px;
+	margin-top:0px
+}
+.tweet-stream .tweet_list li .tweet_time a {
+	font-weight:400;
+}
+.photo-thumbs {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.photo-thumbs li {
+	list-style: none;
+	float: left;
+	margin: 3px;
+	padding: 0px;
+	background: #FFF;
+	width:70px;
+}
+.photo-thumbs li a {
+}
+.photo-thumbs li img {
+	display: block;
+}
+.photo-thumbs li a img {
+	border: none;
+}
+/* ========= End =========== */
+
+/* ========= 13. Button Style =========== */
+.btn-square{
+	border:2px solid #FFF;
+	padding:8px 14px;
+	font-weight:500;
+	font-family: 'Roboto Slab', serif;
+	color:#FFF !important;
+	text-transform:uppercase;
+}
+.btn-square:hover{
+	background:#FFF;
+	color:#56beb8 !important;
+}
+.btn-round{
+	padding:10px 18px;
+	font-weight:600;
+	color:#FFF;
+	display:inline-block;
+	background:#56beb8;
+	text-transform:uppercase;
+	font-family: 'Roboto Slab', serif;
+	
+	border-radius:20px;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+}
+.btn-round:hover{
+	background:#333;
+	color:#FFF;
+}
+.btn-border-round{
+	padding:10px 22px;
+	font-weight:500;
+	color:#323232;
+	margin-top:10px;
+	display:inline-block;
+	text-transform:uppercase;
+	border:1px solid #323232;
+	font-family: 'Roboto Slab', serif;
+	
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+.btn-border-round i{
+	padding-left:8px;
+}
+.btn-border-round:hover{
+	background:#56beb8;
+	color:#FFF;
+	border:1px solid #56beb8;
+}
+
+.btn-border-round.dark, .btn-border-round.white{
+	border:1px solid #FFF;
+	color:#FFF;
+	background:none;
+}
+.btn-border-round.white:hover{
+	border:1px solid #FFF;
+	background:#FFF;
+	color:#56beb8;
+}
+.btn-border-round.dark:hover{
+	color:#FFF;
+	background:#56beb8;
+	border:1px solid #56beb8;
+}
+
+.demo-button a{
+	margin:0 8px 15px 0;
+}
+.my-btn {
+	display:inline-block;
+	font-size:16px;
+	padding:10px
+}
+.my-btn:hover, .my-btn.btn-large:hover, .my-btn.btn-small:hover {
+	color:#FFF;
+	background:#40aae6;
+}
+.my-btn.btn-small {
+	padding:8px;
+	font-size:14px;	
+}
+.btn-dark-bg{
+	text-align:center;
+	background:url(../images/btn-demo.jpg) no-repeat center center;
+	padding:25px;
+}
+.btn-dark-bg .demo-button a{
+	margin-bottom:0;
+}
+
+/* Mini Style */
+.btn-round.btn-mini, .btn-border-round.dark.btn-mini, .btn-border-round.btn-mini{
+	padding:6px 14px;
+	font-size:12px;
+	text-transform:capitalize;
+}
+/* Small Style */
+.btn-round.btn-small, .btn-border-round.dark.btn-small, .btn-border-round.btn-small{
+	padding:8px 13px;
+	font-size:14px;
+	text-transform:capitalize;
+}
+/* Medium Style */
+.btn-round.btn-medium, .btn-border-round.dark.btn-medium, .btn-border-round.btn-medium{
+	padding:10px 14px;
+	font-size:14px;
+	text-transform:capitalize;
+}
+.btn-round.btn-large, .btn-border-round.dark.btn-large, .btn-border-round.btn-large{
+	padding:12px 14px;
+	font-size:15px;
+	text-transform:capitalize;
+}
+.my-btn.btn-large {
+	padding:12px;
+	font-size:18px
+}
+.my-btn, .my-btn.btn-orange:hover, .my-btn.btn-green:hover, .my-btn.btn-pink:hover, .my-btn.btn-blue:hover, .my-btn.btn-cyan:hover {
+	background:#2a333b;
+}
+.my-btn, .my-btn.btn-small, .my-btn.btn-large, .my-btn.btn-orange, .my-btn.btn-green, .my-btn.btn-pink, .my-btn.btn-blue, .my-btn.btn-cyan, .my-btn.btn-orange:hover, .my-btn.btn-green:hover, .my-btn.btn-pink:hover, .my-btn.btn-blue:hover, .my-btn.btn-cyan:hover {
+	color:#f3f3f3;
+	font-weight:600;
+}
+.my-btn.bordered{
+	background:none;
+	border:1px solid #cccccc;
+	color:#999999;
+}
+.my-btn.shadow{
+	border:1px solid #FFF;
+	background:#40aae6;
+	-webkit-box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.07);
+	-moz-box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.07);
+	box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.07);
+	color:#FFF;
+}
+.my-btn.shadow:hover{
+	border:1px solid #FFF;
+	background:#2a333b;
+	color:#FFF;
+}
+.my-btn.bordered:hover{
+	background:none !important;
+	border:1px solid #40aae6;
+	color:#40aae6;
+}
+/* ========= End =========== */
+
+/* ========= 14. Tabbing Style =========== */
+.tab-content{
+	padding:15px;
+	border-width:0 1px 1px 1px;
+	border-color:#dedede;
+	border-style:solid;
+	background:#FFF;
+}
+.theme-tab .nav-tabs > li > a, .theme-tab .nav-tabs{
+	border:none;
+}
+.theme-tab .nav-tabs > li > a{
+	border-radius:0;
+	background:#323232;
+	color:#FFF;
+	font-size:12px;
+	border-width:1px 1px 0 1px;
+	border-color:#323232;
+	border-style:solid;
+}
+.theme-tab .nav-tabs > li.active > a, .theme-tab .nav-tabs > li.active > a:hover, .theme-tab .nav-tabs > li.active > a:focus{
+	border-radius:0;
+	background:#ffffff;	
+	border:none;
+	color:#56beb8;
+	border-width:1px 1px 0 1px;
+	border-color:#dedede;
+	border-style:solid;
+}
+.theme-tab .nav > li > a:focus{
+	background:#ffffff;
+	color:#56beb8;
+	border-width:1px 1px 0 1px;
+	border-color:#dedede;
+	border-style:solid;
+}
+.theme-tab .nav > li > a:hover{
+	background:#56beb8;
+	color:#FFF;
+	border-width:1px 1px 0 1px;
+	border-color:#56beb8;
+	border-style:solid;
+}
+/* ========= End =========== */
+
+/* ========= 15. Accordian Style =========== */
+.theme-accordian .panel-group .panel{
+	border-radius:0;
+	border:none;
+	box-shadow:none;
+}
+.theme-accordian .panel-default > .panel-heading{
+	background-color:#56beb8;
+	border-radius:0;
+	padding:0;
+}
+.theme-accordian .panel-title > a{
+	padding:12px 15px;
+	font-size:14px;
+	outline:0;
+	font-family: 'Open Sans', sans-serif;
+	display:block;
+	color:#FFF;
+	text-transform:capitalize;
+	outline:none;
+	position:relative;
+}
+.theme-accordian .panel-body{
+	padding:15px 0 10px 0;
+}
+.panel{
+	background:none;
+}
+/* ========= End =========== */
+
+/* ========= 16. Our Skills Style =========== */
+.piecharts h2 {
+	font-size:45px;
+	border:0;
+	line-height: 40px;
+	margin-bottom: 30px;
+}
+.piecharts p {
+	margin:0
+}
+.piecharts .container {
+	position: relative;
+	z-index: 5;
+	font-family: 'Roboto Slab', serif;
+}
+.piecharts .col-xs-6 {
+	text-align:center;
+}
+.chart {
+	position: relative;
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	margin: 10px 0 20px 0;
+	text-align: center;
+}
+.chart.first {
+	margin-left:0;
+}
+.chart canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.percent {
+	display: inline-block;
+	line-height: 100px;
+	z-index: 2;
+	font-size:18px;
+	font-weight: 600;
+	color:#59585b;
+	font-family: 'Roboto Slab', serif;
+}
+.percent:after {
+	content: '%';
+	margin-left: 0.1em;
+	font-size: .8em;
+}
+.angular {
+	margin-top: 100px;
+}
+.angular .chart {
+	margin-top: 0;
+}
+.skill-name {
+	font-size: 13px;
+	font-weight: 500;
+	color:#333;
+	text-align:center;
+	text-transform:uppercase;
+	margin-bottom:20px;
+	width: 100%;
+}
+/* ========= End =========== */
+
+/* ========= 17. Skills Bar Style =========== */
+.skillbar-wrap{
+	padding:0 0 27px 0;
+	font-family: 'Roboto Slab', serif;
+	font-size:14px;
+}
+.skillbar-wrap .col-md-6 .clearfix{
+	padding:10px 0;
+}
+.skillbar {
+	position:relative;
+	display:block;
+	width:100%;
+	background:#efefef;
+	height:8px;	
+	
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;	
+}
+.skillbar-bar {
+	height:8px;
+	width:0px;
+	background:#56beb8;
+	margin:10px 0 0 0;	
+}
+.skill-bar-percent {
+	color:#303030;
+}
+/* ========= End =========== */
+
+/* ========= 18. Stats Style =========== */
+.stats-wrap {
+    font-size: 13px;
+	color:#333;
+    padding: 70px 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.stats-wrap i{
+	color:#333;
+	font-size:40px;
+	display:block;
+	margin:0 0 25px 0;
+}
+.counter{
+	color:#56beb8;
+	font-size:40px;
+	padding-bottom:15px;
+	display:block;
+	font-weight:400;
+	font-family: 'Roboto Slab', serif;
+	letter-spacing:-1px;
+}
+/* ========= End =========== */
+
+/* ========= 19. Cube Tabs Style =========== */
+.cbp-l-grid-tabs .cbp-item{
+	max-width:100%;
+	text-align:left;
+}
+.cbp-l-filters-big .cbp-filter-item{
+	border:none;
+	color:#333;
+	font:400 15px/22px "Roboto Slab",serif;
+	background:#efefef;
+	text-transform:capitalize;
+}
+.cbp-l-filters-big .cbp-filter-item.cbp-filter-item-active, .cbp-l-filters-big .cbp-filter-item:hover{
+	background:#333;
+	color:#FFF;
+}
+
+.cbp-l-grid-tabs .cbp-item{
+	font:13px/22px 'Open Sans', sans-serif;
+}
+/*#js-grid-tabs .row [class*="col-"]:nth-child(n+3) .menu-item, #home-menu .row [class*="col-"]:nth-child(n+3) .menu-item{
+	margin:0;
+	padding:0;
+	border:none;
+}
+#js-grid-tabs .row, #home-menu .row{
+	padding:40px;
+	background:#FFF;
+}
+*/
+/* ========= End =========== */
+
+/* ========= 20. Shopping Cart Style =========== */
+#offcanvas-overlay, #offcanvas-container
+{
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    right:0;
+    height: 100%;
+    opacity: 0;
+	
+	box-sizing: border-box;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -ms-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+#offcanvas-overlay
+{
+    width: 100%;
+    background: rgba(0, 0, 0, .7);
+}
+#offcanvas-overlay.oncanvas
+{
+    opacity: 1;  /*set to one (1) if using rgba opacity*/
+    z-index: 100000;
+    cursor: url(../images/close-cursor.png), auto;
+}
+/*CONTAINER*/
+#offcanvas-container
+{
+    width: 350px;  /*equal to translateX px*/
+    background-color: #FFF;
+   -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+	
+	
+}
+#offcanvas-container.oncanvas
+{
+    opacity: 1;
+    z-index: 1100000;
+    
+	-webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+/*CONTENT*/
+#offcanvas-content{
+    height: 100%;
+    overflow-y: auto;
+	 
+}
+.cart-head{
+	background:#f5f5f5;
+	font-family: 'Roboto Slab', serif;
+	padding:15px 25px;
+	color:#333;
+	font-size:16px;
+	font-weight:500;
+}
+.cart-head span{
+	color:#56beb8;
+	font-weight:600;
+}
+.cart-item{
+	padding:25px;
+	background:#FFF;
+}
+.cart-item ul{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+.cart-item .menu-image{
+	border-radius:3px;
+	width:80px;
+}
+.cart-item ul li:last-child .menu-item{
+	margin:0 0 25px 0;
+	padding:0;
+	border:none;
+}
+/* ========= End =========== */
+
+/* ========= 21. Page Loader =========== */
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    background: #f5f5f5;
+}
+.loader-wrap{
+    margin:0 auto;
+    position:relative;
+    width:90px;
+    height:90px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  
+    /*
+    Nope =(
+    margin-left: -25%;
+    margin-top: -25%;
+    */
+
+    /* 
+    Yep!
+    */
+    transform: translate(-50%, -50%);
+
+}
+.loader-wrap:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 90px;
+    height: 90px;
+    background-image:url(../images/logo-loader.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+.loader {
+  font-size: 10px;
+  margin: 0;
+  text-indent: -9999em;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+	background: #d0d0d0;
+  background: -moz-linear-gradient(left, #d0d0d0 10%, rgba(208,208,208, 0) 42%);
+  background: -webkit-linear-gradient(left, #d0d0d0 10%, rgba(208,208,208, 0) 42%);
+  background: -o-linear-gradient(left, #d0d0d0 10%, rgba(208,208,208, 0) 42%);
+  background: -ms-linear-gradient(left, #d0d0d0 10%, rgba(208,208,208, 0) 42%);
+  background: linear-gradient(to right, #d0d0d0 10%, rgba(208,208,208, 0) 42%);
+  position: relative;
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.loader:before {
+  width: 50%;
+  height: 50%;
+background: #d0d0d0;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+.loader:after {
+  background: #f5f5f5;
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  content: '';
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+#pageloader {
+    background:#f5f5f5;
+    height: 100%;
+    position: fixed;
+    width: 100%;	
+    z-index: 999999;
+	color:#FFF;
+	font-size:16px;
+	font-weight:400;
+	text-align:center;
+	font-style:italic;
+	display:none;
+}
+.loader-item {
+    left: 50%;
+    margin: -32px 0 0 -32px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: auto;
+	width:64px;
+	height:64px;
+}
+.loader-item img{
+	margin-bottom:10px;
+}
+/* ========= End =========== */
+
+/* ========= 22. Login Modal Popup Style =========== */
+.form-inline .form-group{
+	margin-bottom: 20px;
+	float: right;
+}
+.title{
+    text-decoration:underline;
+    padding: 10px 5px;
+}
+.btn-launch,.btn-launch:hover, .btn-launch:active, .btn-launch:focus{
+	background-color: #2ecc71;
+    border: medium none #2ecc71;
+    box-shadow: 0 3px 0 #d35400, 0 5px 2px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px 40px;
+    margin-top:10%;
+}
+.bt-login,.bt-login:hover, .bt-login:active, .bt-login:focus {
+    background-color: #56beb8;
+    color: #ffffff;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: background-color 300ms linear 0s;
+}
+.login-tab {
+	margin: 0 auto;
+	max-width: 380px;
+}
+.login-modal-header {
+	background: #262626;
+	color: #fff;
+}
+.login-modal-header .modal-title {
+	color: #fff;
+}
+.login-modal-header .close {
+	color: #fff;
+}
+.login-modal i {
+	color: #000;
+}
+.login-modal form {
+	max-width: 340px;
+}
+.tab-pane form {
+	margin: 0 auto;
+}
+.login-modal-footer{
+	margin-top:15px;
+	margin-bottom:15px;
+}
+/* ========= End =========== */
+
+/* ========= 23. Bootstrap Helper Style =========== */
+.white {
+    background: #fff none repeat scroll 0 0;
+}
+.table.white > tbody > tr > td {
+    text-align: center;
+    vertical-align: middle;
+}
+.table.white > thead > tr > th {
+	padding:15px;
+	color:#56beb8;
+}
+.jumbotron {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #cccccc;
+}
+
+.alert-theme{
+	background:#56beb8;
+	color:#FFF;
+}
+
+.alert h4, .alert-theme h4{
+	margin:0;
+}
+.tooltip-inner{
+	padding:10px;
+	font-size:12px;
+	font-family: 'Open Sans', sans-serif;
+}
+.divider-wrap{
+	margin:40px 0;
+	height:1px;
+	display:block;
+	position:relative;
+	width:100%;
+}
+.bs-docs-grid .col-md-1 span, .bs-docs-grid .col-md-2 span, .bs-docs-grid .col-md-3 span, .bs-docs-grid .col-md-4 span,  .bs-docs-grid .col-md-5 span,  .bs-docs-grid .col-md-6 span,  .bs-docs-grid .col-md-4 span,  .bs-docs-grid .col-md-8 span,  .bs-docs-grid .col-md-9 span,  .bs-docs-grid .col-md-10 span {
+    background-color: #f5f5f5;
+	display:block;
+    line-height: 40px;
+    margin-bottom: 20px;
+    min-height: 40px;
+    text-align: center;
+}
+/* ========= End =========== */
